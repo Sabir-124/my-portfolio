@@ -1,0 +1,98 @@
+.color-text {
+  background: linear-gradient(180deg, white, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-section {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-top: 130px;
+}
+.about-header {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; opacity: 0;
+  display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 100px; position: relative;
+}
+.about-header::before,
+.about-header::after {
+  background: linear-gradient(180deg, white, #00ffff); 
+  border-radius: 20px; content: ''; display: inline-block;
+  height: 5px; flex-grow: 1; margin: 0 40px; box-shadow: 0px 0px 10px 1.5px lightgray;
+}
+.text-header {
+  font-size: 50px; font-weight: 700; white-space: nowrap;
+}
+.about-contents {
+  display: flex; flex-direction: column; font-size: 25px; row-gap: 150px; justify-content: center;
+}
+.part2,
+.part {
+  display: flex; align-items: center; justify-content: center; column-gap: 150px; flex: 1; max-width: 1500px;
+}
+.pics {
+  width: 550px; height: 480px; border-radius: 180px 100px 200px 300px; animation: glo 1.5s infinite alternate;
+}
+@keyframes glo {
+  0% {
+    box-shadow: 0 0 25px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 75px white;
+  }
+}
+.about-headers {
+  font-size: 35px; font-weight: 700; 
+}
+.text-part,
+.appear {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; opacity: 0;
+}
+.interests {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: center; margin-top: 90px; column-gap: 50px;
+}
+.card {
+  width: 350px; height: 440px; perspective: 1000px; cursor: default;
+}
+.card-inner {
+  position: relative; width: 330px; height: 440px; transition: transform 0.9s; transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, 
+.card-back {
+  position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 30px;
+}
+.card-front {
+  background: linear-gradient(360deg, white, #00ffff); text-align: center; align-content: center;
+}
+.card-back {
+  transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; color: black; text-align: center; align-items: center;
+}
+.gradient-shadow {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+  background: linear-gradient(45deg, white, #00ffff); filter: blur(20px); transform: scale(1.02); border-radius: 10px;
+}
+.interest-pics {
+  width: 100%; height: 100%; border-radius: 30px; 
+}
+.interest-name {
+  font-size: 35px; font-weight: 700; margin: 0 0 10px 0;
+}
+.interest-detail {
+  width: 300px; font-weight: 500; font-size: 22px;
+}
+@media (max-width: 1152px) {
+  .part2,
+  .part {
+    flex-direction: column; row-gap: 50px;
+  }
+  .part2 {
+    flex-direction: column-reverse;
+  }
+  .interests {
+    grid-template-columns: 1fr 1fr; row-gap: 100px; 
+  }
+}
+@media (max-width: 768px) {
+  .interests {
+    grid-template-columns: 1fr; row-gap: 100px; 
+  }
+}

@@ -1,0 +1,22 @@
+.framework-pics {
+  border-radius: 100px; width: 445px; height: 445px; animation: glo 1.5s infinite alternate; cursor: pointer; transform: translateX(0); transition: -0.1s transform 0.5s ease-in; 
+} 
+.frameworks {
+  display: flex; align-items: center; justify-content: center;  position: absolute; left: 10%; top: 170px; white-space: nowrap; pointer-events: none; overflow: visible; z-index: -5; column-gap: 70px; padding: 90px; border: none;
+  animation: glo 1.5s infinite alternate; border-radius: 40px; 
+  transform: translateX(0); 
+  transition: 2s transform 1ms ease, clip-path 0.3s ease;
+  clip-path: inset(0 100% 0 0); 
+}
+.frameworks img {
+  transform: translateX(0%); transition: 2s transform 1ms ease; width: 200px;
+}
+.frameworks p {
+  margin: 0;
+}
+.front-side:hover .frameworks{
+  clip-path: inset(-100% -100% -100% -100%); transform: translateX(30%);
+}
+.front-side:hover .framework-pics {
+  transform: translateX(-100%);
+}

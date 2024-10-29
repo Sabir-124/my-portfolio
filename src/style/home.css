@@ -1,0 +1,49 @@
+.home-section {
+  display: flex; justify-content: center; align-items: center; column-gap: 100px;
+  margin-top: 180px;
+}
+.introduction-section {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; opacity: 0;
+  display: flex; flex-direction: column; row-gap: 15px; flex: 1; max-width: 560px;
+}
+.greeting-line {
+  font-size: 30px; font-weight: 600; margin: 0;
+}
+.name-line {
+  font-size: 90px; font-weight: 700; margin: 0;
+  background: linear-gradient(300deg, white, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introduction-line {
+  flex: 1; max-width: 100%; font-size: 20px; line-height: 30px; margin: 0;
+}
+.bold {
+  background: linear-gradient(180deg, white, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-section {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; opacity: 0;
+}
+.profile {
+  width: 520px; border-radius: 120px 180px 150px 200px; animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 25px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 75px white;
+  }
+}
+@media (max-width: 1024px) {
+  .home-section {
+    column-gap: 50px;
+  }
+}
+@media (max-width: 960px) {
+  .home-section {
+    flex-direction: column; row-gap: 90px;
+  }
+}

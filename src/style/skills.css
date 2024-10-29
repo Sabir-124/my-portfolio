@@ -1,0 +1,6 @@
+.skill-section {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; row-gap: 70px; margin-top: 130px;
+}
+.skill-header {
+  margin: 0;
+}

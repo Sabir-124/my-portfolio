@@ -1,0 +1,41 @@
+.contact-section {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 130px;
+}
+.contact-contents {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; max-width: 1500px;
+}
+.contact-text p{
+  font-size: 25px; font-weight: 500; line-height: 150%; text-align: center;
+}
+.contacts {
+  display: flex; flex-direction: column; row-gap: 50px; justify-content: center; align-items: center;
+}
+.last-message,
+.contacts p{
+  font-size: 30px; font-weight: 600;
+}
+.last-message {
+  margin-top: 100px; text-align: center;
+}
+.contact-paths {
+  display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; justify-content: center; align-items: stretch; column-gap: 10%;
+}
+.each-contact {
+  padding: 50px; transition: box-shadow 0.5s ease; border-radius: 50px; display: flex; align-items: center; cursor: pointer;
+}
+.icon {
+  width: 150px;
+}
+.each-contact:hover {
+  box-shadow: 0px 10px 60px white;
+}
+@media (max-width: 1229px) {
+  .contact-paths {
+    grid-template-columns: 1fr 1fr; row-gap: 80px; column-gap: 110px;
+  }
+}
+@media (max-width: 615px) {
+  .contact-paths {
+    grid-template-columns: 1fr;
+  }
+}

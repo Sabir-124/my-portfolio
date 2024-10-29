@@ -1,0 +1,30 @@
+.otherSkill-pics {
+  border-radius: 100px; width: 425px; height: 425px; animation: glo 1.5s infinite alternate; cursor: pointer; transform: translateX(0); transition: -0.1s transform 0.5s ease-in; 
+}
+.skill-contents {
+  display: flex; align-items: flex-start; justify-content: center;  position: absolute; left: 10%; top: 150px; white-space: nowrap; pointer-events: none; overflow: visible; z-index: -5; column-gap: 70px; padding: 90px; border: none;
+  animation: glo 1.5s infinite alternate; border-radius: 40px; 
+  transform: translateX(0);
+  transition: 2s transform 1ms ease, clip-path 0.1s ease;
+  clip-path: inset(0 100% 0 0); 
+}
+.front-side:hover .otherSkill-pics {
+  transform: translateX(-115%);
+}
+.front-side:hover .skill-contents{
+  clip-path: inset(-100% -100% -100% -100%); transform: translateX(1%);
+}
+@media (max-width: 1397px) {
+  .otherSkill-pics {
+    transition: opacity 0.6s;
+  }
+  .front-side:hover .otherSkill-pics {
+    transform: translateX(0%); opacity: 0;
+  }
+  .skill-contents {
+    left: -53%; transition: clip-path 0.5s; clip-path: inset(0 100% 0 100%); 
+  }
+  .front-side:hover .skill-contents{
+    clip-path: inset(-100% -100% -100% -100%); transform: translateY(0%);
+  }
+}
