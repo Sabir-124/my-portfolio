@@ -24,12 +24,12 @@ const Languages = ({ value }) => {
       <div className="front-side">
         <p className='color-text'>Languages</p>
         <div className="pics-of-skills">
-          <img className="skill-pics" src="/my-portfolio/pics/languages.png" />
+          <img className="skill-pics" src="/my-portfolio/pics/languages.png" alt='languages'/>
         </div>
         <div className="content1">
           {Object.values(languages).map((language) => (
             <div className='image-container'>
-              <img className={language.className} src={language.image} alt='language'/>
+              <img className={language.className} src={language.image} alt='language-icon'/>
               <p>{language.name}</p>
             </div>
           ))}

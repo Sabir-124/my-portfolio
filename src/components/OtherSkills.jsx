@@ -24,12 +24,12 @@ const OtherSkills = ({ value }) => {
       <div className="front-side">
         <p className='color-text'>Other Skills</p>
         <div className="pics-of-skills">
-          <img className="otherSkill-pics" src="/my-portfolio/pics/otherSkills.png" />
+          <img className="otherSkill-pics" src="/my-portfolio/pics/otherSkills.png" alt='other-skills'/>
         </div>
         <div className="skill-contents">
           {Object.values(otherSkills).map((otherSkill) => (
             <div className='image-container'>
-              <img className={otherSkill.className} src={otherSkill.image} />
+              <img className={otherSkill.className} src={otherSkill.image} alt='other-skills-icon'/>
               <p>{otherSkill.name}</p>
             </div>
           ))}
