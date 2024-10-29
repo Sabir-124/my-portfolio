@@ -9,14 +9,17 @@ const Projects = ({value}) => {
     {
       pic: '/my-portfolio/pics/youtube.png',
       name: 'Youtube Clone',
+      link: 'https://sabir-124.github.io/youtube-clone/'
     },
     {
       pic: '/my-portfolio/pics/weather.png',
-      name: 'Weather Forecast'
+      name: 'Weather Forecast',
+      link: 'https://sabir-124.github.io/weather-forecast/'
     },
     {
       pic: '/my-portfolio/pics/portfolio.png',
-      name: 'My own portfolio'
+      name: 'My own portfolio',
+      link: 'https://sabir-124.github.io/my-portfolio/'
     },
     {
       pic: '/my-portfolio/pics/account.png',
@@ -34,7 +37,7 @@ const Projects = ({value}) => {
         </div>
         <div className="projects-contents appear" ref={el => value.current[14] = el}>
           {Object.values(items).map((item) => (
-            <a className='each-project' href='#' target='_blank'>
+            <a className='each-project' href={item.link} target='_blank'>
               <div className="project">
                 <div className="gradient-shadow"></div>
                 <div className="front-card">
