@@ -7,19 +7,19 @@ const Projects = ({value}) => {
 
   const items = [
     {
-      pic: '/pics/youtube.png',
+      pic: '/my-portfolio/pics/youtube.png',
       name: 'Youtube Clone',
     },
     {
-      pic: '/pics/weather.png',
+      pic: '/my-portfolio/pics/weather.png',
       name: 'Weather Forecast'
     },
     {
-      pic: '/pics/portfolio.png',
+      pic: '/my-portfolio/pics/portfolio.png',
       name: 'My own portfolio'
     },
     {
-      pic: '/pics/account.png',
+      pic: '/my-portfolio/pics/account.png',
       name: 'Khata Manager',
       link: 'https://sabir-124.github.io/khata-manager/'
     }
@@ -38,7 +38,7 @@ const Projects = ({value}) => {
               <div className="project">
                 <div className="gradient-shadow"></div>
                 <div className="front-card">
-                  <img src={item.pic} />
+                  <img src={item.pic} alt='project-icon'/>
                   <p className='color-text'>{item.name}</p>
                 </div>
                 <div className="back-card">

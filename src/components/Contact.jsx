@@ -9,16 +9,16 @@ const Contacts = ({value}) => {
 
   const contacts = [
     {
-      img: '/logos/whatsapp.png'
+      img: '/my-portfolio/logos/whatsapp.png'
     },
     {
-      img: '/logos/twitter.png'
+      img: '/my-portfolio/logos/twitter.png'
     },
     {
-      img: '/logos/email.png'
+      img: '/my-portfolio/logos/email.png'
     },
     {
-      img: '/logos/linkedin.png'
+      img: '/my-portfolio/logos/linkedin.png'
     }
   ]
 
@@ -38,7 +38,7 @@ const Contacts = ({value}) => {
             <div className="contact-paths">
               {Object.values(contacts).map((each) => (
                 <div className='each-contact'>
-                  <a href='#'><img className='icon' src={each.img} /></a>
+                  <a href='#'><img className='icon' src={each.img} alt='contact icon'/></a>
                 </div>
               ))}
             </div>

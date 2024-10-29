@@ -14,7 +14,7 @@ const Home = ({value}) => {
           <p className='introduction-line'>A dedicated <b className='bold'>Web developer</b> with a passion for creating impactful and innovative solutions. My goal is to bring ideas to life through my work, utilizing my skills in <b className='bold'>Web developement.</b></p>
         </div>
         <div className="profile-section" ref={el => value.current[1] = el}>
-          <img className='profile' alt='profile-pic' src='/pics/profile.jpeg' />
+          <img className='profile' alt='profile-pic' src='/my-portfolio/pics/profile.jpeg' />
         </div>
       </div>
     </>

@@ -13,19 +13,19 @@ const About = ({value}) => {
     {
       id: 1,
       name: 'Hiking',
-      image: '/pics/hiking.jpeg',
+      image: '/my-portfolio/pics/hiking.jpeg',
       detail: "I love hiking because it lets me escape into nature, explore new trails, and feel a sense of peace and adventure with every step."
     },
     {
       id: 2,
       name: 'Painting',
-      image: '/pics/painting.jpeg',
+      image: '/my-portfolio/pics/painting.jpeg',
       detail: "I love painting because it allows me to express emotions and creativity through vibrant colors and brushstrokes, turning blank canvases into stories."
     },
     {
       id: 3,
       name: 'Learning about new tech',
-      image: '/pics/newTech.jpeg',
+      image: '/my-portfolio/pics/newTech.jpeg',
       detail: "I love how technology constantly evolves, opening endless possibilities for creativity, connection, and problem-solving."
     },
   ]
@@ -45,12 +45,12 @@ const About = ({value}) => {
               <p>{statement1}</p>
             </div>
             <div ref={el => value.current[4] = el} className='appear'>
-              <img className='pics' alt='pic' src='/pics/biography.jpeg' />
+              <img className='pics' alt='pic' src='/my-portfolio/pics/biography.jpeg' />
             </div>
           </div>
           <div className="part2">
             <div ref={el => value.current[5] = el} className='appear'>
-              <img className='pics' alt='pic' src='/pics/professional.jpeg' />
+              <img className='pics' alt='pic' src='/my-portfolio/pics/professional.jpeg' />
             </div>
             <div className="text-part" ref={el => value.current[6] = el}>
               <p className='about-headers color-text'>Professional Philosophy</p>
